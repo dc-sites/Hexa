@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinhala Font Demonstration</title>
+
+  <!-- 1. Google Fonts Import (Noto Sans Sinhala + Gemunu Libre) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&family=Noto+Sans+Sinhala:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Variables for Fonts & Colors */
+    :root {
+      --heading-font: 'Gemunu Libre', sans-serif;
+      --body-font: 'Noto Sans Sinhala', 'Iskoola Pota', sans-serif;
+      --primary-color: #0066cc;
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+      --text-color: #212529;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--body-font);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Heading using Gemunu Libre */
+    h1 {
+      font-family: var(--heading-font);
+      color: var(--primary-color);
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    /* Subheadings using bold Noto Sans Sinhala */
+    h2 {
+      font-family: var(--body-font);
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e9ecef;
+      padding-bottom: 5px;
+    }
+
+    /* Paragraph text using regular Noto Sans Sinhala */
+    p {
+      font-family: var(--body-font);
+      font-weight: 400;
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #495057;
+    }
+
+    /* Button styling */
+    .btn {
+      display: inline-block;
+      font-family: var(--body-font);
+      font-weight: 600;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .btn:hover {
+      background-color: #0052a3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Main Heading -->
+    <h1>අධ්‍යයන සටහන් සහ ප්‍රශ්න පත්‍ර</h1>
+
+    <!-- Paragraph Text -->
+    <p>
+      මෙම වෙබ් අඩවිය මගින් ඔබට 1 ශ්‍රේණියේ සිට 13 ශ්‍රේණිය දක්වා සියලුම විශයන්ට අදාළ කෙටි සටහන්, 
+      පසුගිය විභාග ප්‍රශ්න පත්‍ර සහ ආදර්ශ ප්‍රශ්න පත්‍ර නොමිලේ ලබා ගත හැක.
+    </p>
+
+    <h2>ප්‍රධාන අංශයන්</h2>
+    <p>
+      ඔබට අවශ්‍ය ශ්‍රේණිය සහ මාධ්‍යය (සිංහල / English / தமிழ்) තෝරාගෙන අදාළ පත්‍රිකා පහසුවෙන්ම 
+      භාගත (Download) කරගන්න.
+    </p>
+
+    <!-- Interactive / Action Button -->
+    <a href="#" class="btn">ප්‍රශ්න පත්‍ර බලන්න</a>
+  </div>
+
+</body>
+</html>
