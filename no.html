@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clean Sinhala Typography</title>
+  <title>Clean Sinhala Fonts</title>
 
-  <!-- Google Fonts: Noto Sans Sinhala (Body) + Yaldevi (Headings) -->
+  <!-- Google Font: Noto Sans Sinhala (Regular 400, Medium 500, Semi-Bold 600, Bold 700) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;500;600&family=Yaldevi:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      /* Sleek font combinations */
-      --font-heading: 'Yaldevi', sans-serif;
-      --font-body: 'Noto Sans Sinhala', -apple-system, BlinkMacSystemFont, sans-serif;
-      
+      /* clean UI සඳහා Noto Sans Sinhala භාවිතා කිරීම */
+      --font-family: 'Noto Sans Sinhala', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       --primary-blue: #0066cc;
-      --text-dark: #2b2f33;
-      --text-muted: #6c757d;
+      --text-main: #2b2f33;
+      --text-sub: #4a5568;
       --bg-gray: #f4f6f8;
     }
 
@@ -29,15 +27,15 @@
     }
 
     body {
-      font-family: var(--font-body);
+      font-family: var(--font-family);
       background-color: var(--bg-gray);
-      color: var(--text-dark);
+      color: var(--text-main);
       padding: 16px;
       -webkit-font-smoothing: antialiased;
     }
 
     .card {
-      max-width: 480px; /* Standard mobile card width */
+      max-width: 450px; /* Clean mobile card width */
       margin: 20px auto;
       background: #ffffff;
       padding: 24px;
@@ -45,46 +43,47 @@
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
 
-    /* Clean, compact Main Heading */
+    /* Main Title - Compact & Clean Bold */
     h1 {
-      font-family: var(--font-heading);
+      font-family: var(--font-family);
       font-weight: 700;
-      font-size: 1.45rem; /* Reduced size for clean mobile view */
-      line-height: 1.35;
+      font-size: 1.25rem; /* ~20px (Compact) */
+      line-height: 1.4;
       color: var(--primary-blue);
       margin-bottom: 12px;
+      letter-spacing: -0.2px;
     }
 
-    /* Clean Subheading */
+    /* Sub Heading - Clean Semi-Bold */
     h2 {
-      font-family: var(--font-heading);
+      font-family: var(--font-family);
       font-weight: 600;
-      font-size: 1.15rem;
-      color: #111;
-      margin-top: 20px;
+      font-size: 1.05rem; /* ~17px */
+      color: #1a202c;
+      margin-top: 18px;
       margin-bottom: 8px;
     }
 
-    /* Small, crisp body text */
+    /* Body Text - Small, Crisp & Easy to read */
     p {
-      font-family: var(--font-body);
+      font-family: var(--font-family);
       font-weight: 400; /* Regular weight */
-      font-size: 0.875rem; /* ~14px: Compact & clear like Notes.lk */
-      line-height: 1.55;
-      color: #4a5568;
+      font-size: 0.825rem; /* ~13.2px (Small & Clean) */
+      line-height: 1.6;
+      color: var(--text-sub);
       margin-bottom: 14px;
     }
 
-    /* Button with tight typography */
+    /* Button Text - Crisp & Medium weight */
     .btn {
       display: inline-block;
-      font-family: var(--font-body);
+      font-family: var(--font-family);
       font-weight: 500;
-      font-size: 0.875rem;
+      font-size: 0.825rem; /* ~13.2px */
       background-color: var(--primary-blue);
       color: #ffffff;
-      padding: 10px 20px;
-      border-radius: 8px;
+      padding: 9px 18px;
+      border-radius: 6px;
       text-decoration: none;
       transition: background 0.2s ease;
     }
@@ -97,14 +96,18 @@
 <body>
 
   <div class="card">
-    <h1>අධ්‍යයන සටහන් සහ ප්‍රශ්නම් පත්‍ර</h1>
+    <!-- Main Heading -->
+    <h1>අධ්‍යයන සටහන් සහ ප්‍රශ්න පත්‍ර</h1>
 
+    <!-- First Circle Area (Body Text) -->
     <p>
       මෙම වෙබ් අඩවිය මගින් ඔබට 1 ශ්‍රේණියේ සිට 13 ශ්‍රේණිය දක්වා සියලුම විෂයන්ට අදාළ කෙටි සටහන්, පසුගිය විභාග ප්‍රශ්න පත්‍ර සහ ආදර්ශ ප්‍රශ්න පත්‍ර නොමිලේ ලබා ගත හැක.
     </p>
 
+    <!-- Sub Heading -->
     <h2>ප්‍රධාන අංශයන්</h2>
 
+    <!-- Second Circle Area (Body Text + Button) -->
     <p>
       ඔබට අවශ්‍ය ශ්‍රේණිය සහ මාධ්‍යය (සිංහල / English / தமிழ்) තෝරාගෙන අදාළ පත්‍රිකා පහසුවෙන්ම භාගත (Download) කරගන්න.
     </p>
@@ -114,4 +117,3 @@
 
 </body>
 </html>
-
