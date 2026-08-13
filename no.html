@@ -3,39 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clean Sinhala Fonts</title>
-
-  <!-- Google Font: Noto Sans Sinhala (Regular 400, Medium 500, Semi-Bold 600, Bold 700) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Clean Sinhala Typography</title>
 
   <style>
-    :root {
-      /* clean UI සඳහා Noto Sans Sinhala භාවිතා කිරීම */
-      --font-family: 'Noto Sans Sinhala', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      --primary-blue: #0066cc;
-      --text-main: #2b2f33;
-      --text-sub: #4a5568;
-      --bg-gray: #f4f6f8;
-    }
+    /* Google Font එක CSS ඇතුළෙන්ම කෙළින්ම import කිරීම */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;500;600;700&display=swap');
 
+    /* CSS Reset */
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-family: 'Noto Sans Sinhala', sans-serif !important; /* Font එක අනිවාර්යයෙන්ම වැඩ කිරීමට !important යොදා ඇත */
     }
 
     body {
-      font-family: var(--font-family);
-      background-color: var(--bg-gray);
-      color: var(--text-main);
+      background-color: #f4f6f8;
+      color: #2b2f33;
       padding: 16px;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     .card {
-      max-width: 450px; /* Clean mobile card width */
+      max-width: 420px;
       margin: 20px auto;
       background: #ffffff;
       padding: 24px;
@@ -43,71 +34,58 @@
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
 
-    /* Main Title - Compact & Clean Bold */
+    /* Main Title - Small & Clean Bold */
     h1 {
-      font-family: var(--font-family);
-      font-weight: 700;
-      font-size: 1.25rem; /* ~20px (Compact) */
+      font-weight: 700 !important;
+      font-size: 18px !important;
       line-height: 1.4;
-      color: var(--primary-blue);
+      color: #0066cc;
       margin-bottom: 12px;
       letter-spacing: -0.2px;
     }
 
     /* Sub Heading - Clean Semi-Bold */
     h2 {
-      font-family: var(--font-family);
-      font-weight: 600;
-      font-size: 1.05rem; /* ~17px */
+      font-weight: 600 !important;
+      font-size: 15px !important;
       color: #1a202c;
       margin-top: 18px;
       margin-bottom: 8px;
     }
 
-    /* Body Text - Small, Crisp & Easy to read */
+    /* Paragraph Text - Small, Crisp & Easy to read */
     p {
-      font-family: var(--font-family);
-      font-weight: 400; /* Regular weight */
-      font-size: 0.825rem; /* ~13.2px (Small & Clean) */
+      font-weight: 400 !important;
+      font-size: 13px !important; /* Notes.lk මෙන් ඉතා clean සහ කුඩා font size එකක් */
       line-height: 1.6;
-      color: var(--text-sub);
+      color: #4a5568;
       margin-bottom: 14px;
     }
 
-    /* Button Text - Crisp & Medium weight */
+    /* Button Styling */
     .btn {
       display: inline-block;
-      font-family: var(--font-family);
-      font-weight: 500;
-      font-size: 0.825rem; /* ~13.2px */
-      background-color: var(--primary-blue);
+      font-weight: 500 !important;
+      font-size: 13px !important;
+      background-color: #0066cc;
       color: #ffffff;
       padding: 9px 18px;
       border-radius: 6px;
       text-decoration: none;
-      transition: background 0.2s ease;
-    }
-
-    .btn:hover {
-      background-color: #0052a3;
     }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <!-- Main Heading -->
     <h1>අධ්‍යයන සටහන් සහ ප්‍රශ්න පත්‍ර</h1>
 
-    <!-- First Circle Area (Body Text) -->
     <p>
       මෙම වෙබ් අඩවිය මගින් ඔබට 1 ශ්‍රේණියේ සිට 13 ශ්‍රේණිය දක්වා සියලුම විෂයන්ට අදාළ කෙටි සටහන්, පසුගිය විභාග ප්‍රශ්න පත්‍ර සහ ආදර්ශ ප්‍රශ්න පත්‍ර නොමිලේ ලබා ගත හැක.
     </p>
 
-    <!-- Sub Heading -->
     <h2>ප්‍රධාන අංශයන්</h2>
 
-    <!-- Second Circle Area (Body Text + Button) -->
     <p>
       ඔබට අවශ්‍ය ශ්‍රේණිය සහ මාධ්‍යය (සිංහල / English / தமிழ்) තෝරාගෙන අදාළ පත්‍රිකා පහසුවෙන්ම භාගත (Download) කරගන්න.
     </p>
